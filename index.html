@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistemas de Pensamiento: Nivel Académico</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-bg: #f0f2f5;
+            --card-bg: #ffffff;
+            --text-dark: #2c3e50;
+            --accent-complex: #4a69bd; /* Azul Profundo (Académico) */
+            --accent-critical: #0a3d62; /* Azul Marino (Serio) */
+            --highlight: #e55039; /* Rojo Ladrillo para énfasis */
+        }
+
+        body {
+            background-color: var(--primary-bg);
+            color: var(--text-dark);
+            font-family: 'Lato', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 50px 20px;
+        }
+
+        /* HEADER ACADÉMICO */
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            background: #fff;
+            padding: 40px;
+            border-bottom: 5px solid var(--text-dark);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        .header-banner-img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            margin-bottom: 25px;
+            filter: brightness(0.9);
+            border: 1px solid #ddd;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            color: var(--text-dark);
+            margin: 0;
+            letter-spacing: -1px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+            margin-top: 10px;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* GRID DE CONTENIDO DENSO */
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 40px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border: 1px solid #e1e1e1;
+            transition: all 0.3s ease;
+        }
+
+        .card:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
+
+        .card-complex { border-top: 6px solid var(--accent-complex); }
+        .card-critical { border-top: 6px solid var(--accent-critical); }
+
+        .card-img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            margin-bottom: 25px;
+            filter: contrast(1.1);
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            margin-top: 0;
+            color: var(--text-dark);
+            border-bottom: 2px solid #f1f1f1;
+            padding-bottom: 15px;
+        }
+
+        .author-citation {
+            font-size: 0.9rem;
+            color: #7f8c8d;
+            font-style: italic;
+            display: block;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        /* TEXTO ACADÉMICO */
+        .academic-text {
+            font-size: 1.05rem;
+            text-align: justify;
+            margin-bottom: 20px;
+            color: #34495e;
+        }
+
+        .concept-block {
+            background: #f8f9fa;
+            border-left: 4px solid #bdc3c7;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        .concept-title {
+            font-weight: 800;
+            display: block;
+            margin-bottom: 5px;
+            color: var(--text-dark);
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+
+        ul { padding-left: 20px; }
+        li { margin-bottom: 12px; }
+
+        /* SECCIÓN DE SÍNTESIS */
+        .synthesis-section {
+            grid-column: span 2;
+            background: #2c3e50;
+            color: #fff;
+            padding: 50px;
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        .synthesis-section h3 { font-family: 'Playfair Display'; font-size: 2rem; margin-top: 0; }
+
+        /* REFERENCIAS */
+        .references-section {
+            margin-top: 50px;
+            background: #fff;
+            padding: 40px;
+            border: 1px solid #ddd;
+        }
+
+        a { color: var(--accent-complex); font-weight: bold; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        @media (max-width: 768px) {
+            .grid-container { grid-template-columns: 1fr; }
+            .synthesis-section { grid-column: span 1; }
+            h1 { font-size: 2.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <img src="banner_header.jpg" alt="Banner Cognitivo" class="header-banner-img" onerror="this.style.display='none'">
+            <h1>EPISTEMOLOGÍA DEL PENSAMIENTO</h1>
+            <div class="subtitle">Análisis Comparativo: Morin vs. Facione</div>
+        </header>
+
+        <div class="grid-container">
+
+            <div class="card card-complex">
+                <img src="complejo.jpg" alt="Complejidad Morin" class="card-img" onerror="this.src='https://via.placeholder.com/600x300/4a69bd/ffffff?text=Imagen+Complejo'">
+                
+                <h2>Pensamiento Complejo</h2>
+                <span class="author-citation">Referencia: Edgar Morin (1999) - "Los siete saberes necesarios..."</span>
+
+                <p class="academic-text">
+                    Morin desafía la "Inteligencia Ciega" que fragmenta el conocimiento. La complejidad no es complicación, es el tejido (<em>complexus</em>) inseparable de lo diverso. Su objetivo es superar la disyunción y el reduccionismo.
+                </p>
+
+                <div class="concept-block" style="border-left-color: var(--accent-complex);">
+                    <span class="concept-title">LA NOOLOGÍA (Esfera de las Ideas)</span>
+                    Morin advierte que las ideas tienen vida propia. En la <strong>Noósfera</strong>, las ideas pueden poseernos si no mantenemos una relación dialógica con ellas. Debemos civilizar nuestras teorías para no ser esclavos de dogmatismos.
+                </div>
+
+                <div class="concept-block">
+                    <span class="concept-title">PRINCIPIOS FUNDAMENTALES</span>
+                    <ul>
+                        <li><strong>Bucle Recursivo:</strong> Rompe la causalidad lineal. El efecto se vuelve causa (la sociedad produce al individuo, y el individuo produce sociedad).</li>
+                        <li><strong>Principio Hologramático:</strong> No solo la parte está en el todo, sino que el todo (con sus conocimientos y cultura) está inscrito en cada parte.</li>
+                        <li><strong>Dialógica:</strong> Une dos lógicas que se excluyen pero son inseparables (ej. Vida/Muerte, Orden/Desorden).</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card card-critical">
+                <img src="critico.jpg" alt="Crítico Facione" class="card-img" onerror="this.src='https://via.placeholder.com/600x300/0a3d62/ffffff?text=Imagen+Critico'">
+
+                <h2>Pensamiento Crítico</h2>
+                <span class="author-citation">Referencia: Facione (2007) / Paul & Elder (2003)</span>
+
+                <p class="academic-text">
+                    Definido como el juicio autorregulado y con propósito. No es meramente negatividad, sino un proceso cognitivo superior fundamentado en estándares intelectuales universales (claridad, exactitud, precisión).
+                </p>
+
+                <div class="concept-block" style="border-left-color: var(--accent-critical);">
+                    <span class="concept-title">LA INFERENCIA Y EL JUICIO</span>
+                    La <strong>Inferencia</strong> es la habilidad medular de identificar elementos necesarios para deducir conclusiones razonables. Implica cuestionar la evidencia, proponer alternativas y extraer consecuencias lógicas de los datos.
+                </div>
+
+                <div class="concept-block">
+                    <span class="concept-title">HABILIDADES COGNITIVAS (DELPHI REPORT)</span>
+                    <ul>
+                        <li><strong>Interpretación y Análisis:</strong> Comprender y expresar el significado de situaciones o datos.</li>
+                        <li><strong>Evaluación:</strong> Valorar la credibilidad de las fuentes y la fortaleza lógica de los argumentos.</li>
+                        <li><strong>Metacognición (Autorregulación):</strong> Es el monitoreo autoconsciente de las propias actividades cognitivas. Es "pensar sobre nuestro pensar" para corregir sesgos propios.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="synthesis-section">
+                <h3>SÍNTESIS PARA LA EDUCACIÓN SUPERIOR</h3>
+                <p style="font-size: 1.2rem; max-width: 800px; margin: 0 auto;">
+                    "El docente  debe transitar de la <strong>fragmentación</strong> a la <strong>conexión</strong>. Necesitamos la <span style="color: #4a69bd; font-weight:bold;">Noología</span> de Morin para entender la vida de las ideas y la <span style="color: #00cec9; font-weight:bold;">Inferencia Crítica</span> de Facione para evaluar su validez. Solo así formaremos ciudadanos aptos para la incertidumbre."
+                </p>
+            </div>
+
+        </div>
+
+        <div class="references-section">
+            <h3 style="margin-top:0; border-bottom: 2px solid #333; padding-bottom:10px;">REFERENCIAS BIBLIOGRÁFICAS (APA 7)</h3>
+            
+            <p style="padding-left: 20px; text-indent: -20px;">
+                Facione, P. A. (2007). <em>Pensamiento Crítico: ¿Qué es y por qué es importante?</em> Insight Assessment. Recuperado de <a href="https://eduteka.icesi.edu.co/pdfdir/PensamientoCriticoFacione.pdf" target="_blank">https://eduteka.icesi.edu.co/pdfdir/PensamientoCriticoFacione.pdf</a>
+            </p>
+
+            <p style="padding-left: 20px; text-indent: -20px;">
+                Morin, E. (1999). <em>Los siete saberes necesarios para la educación del futuro</em>. UNESCO. Recuperado de <a href="https://unesdoc.unesco.org/ark:/48223/pf0000117740_spa" target="_blank">https://unesdoc.unesco.org/ark:/48223/pf0000117740_spa</a>
+            </p>
+
+            <p style="padding-left: 20px; text-indent: -20px;">
+                Paul, R., & Elder, L. (2003). <em>La mini-guía para el pensamiento crítico: Conceptos y herramientas</em>. Fundación para el Pensamiento Crítico. Recuperado de <a href="https://www.criticalthinking.org/resources/PDF/SP-ConceptsandTools.pdf" target="_blank">https://www.criticalthinking.org/resources/PDF/SP-ConceptsandTools.pdf</a>
+            </p>
+        </div>
+
+        <footer style="text-align: center; margin-top: 40px; color: #7f8c8d; font-size: 0.9rem;">
+            Desarrollado por: Daniel Tijerino Cerón | Curso: Introducción a la Pedagogía LD5013
+        </footer>
+
+    </div>
+
+</body>
+</html>
